@@ -10,8 +10,8 @@ inputs:
   region:
     description: 'region AWS'
     required: true
-  ami-instance:
-    description: 'region AWS'
+  id-instance:
+    description: 'id instance'
     required: true
 outputs:
   success:

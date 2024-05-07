@@ -8,5 +8,5 @@ with:
     access-key-id: ${{ secrets.ACESS_KEY_ID }}
     secret-access-key: ${{ secrets.ACESS_SECRET_KEY }}
     region: ${{ secrets.REGION }}
-    ami-instance: ${{ secrets.AMI_INSTANCE }}   
+    id-instance: ${{ secrets.ID_INSTANCE }}   
 ```

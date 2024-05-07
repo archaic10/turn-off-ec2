@@ -3,7 +3,7 @@ const core = require('@actions/core')
 const accessKeyId = core.getInput('access-key-id');
 const secretAccessKey = core.getInput('secret-access-key');
 const region = core.getInput('region');
-const amiInstance = core.getInput('ami-instance');
+const idInstance = core.getInput('id-instance');
 
 AWS.config.update({
     accessKeyId: accessKeyId,
@@ -47,13 +47,13 @@ function validateParams(){
         
     }
 
-    if(!amiInstance && amiInstance == ""){
-        core.setFailed("ami-instance undefined!");
+    if(!idInstance && idInstance == ""){
+        core.setFailed("id-instance undefined!");
         return false;
     }
     return true;
 }
 
 if(validateParams()){
-    stopInstance(amiInstance);
+    stopInstance(idInstance);
 }
