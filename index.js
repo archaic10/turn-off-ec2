@@ -24,7 +24,7 @@ function stopInstance(instanceId) {
         return;
       } 
       
-      console.log('Instância desligada com sucesso:', data);
+      console.log('Instance shut down successfully::', data);
     });
 }
 

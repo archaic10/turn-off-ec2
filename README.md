@@ -1,5 +1,5 @@
 # Turn off EC2
- This action turn off an existing EC2 instance to AWS.
+ This action turn off an EC2 instance to AWS.
 
 ### example
 ```yml
