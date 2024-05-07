@@ -1,0 +1,21 @@
+name: 'Turn off EC2'
+description: 'This action turn off an EC2 instance to AWS'
+inputs:
+  access-key-id:
+    description: 'access key id AWS'
+    required: true
+  secret-access-key:
+    description: 'secret access key AWS'
+    required: true
+  region:
+    description: 'region AWS'
+    required: true
+  ami-instance:
+    description: 'region AWS'
+    required: true
+outputs:
+  success:
+    description: 'message success'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
